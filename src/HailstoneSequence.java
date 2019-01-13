@@ -31,7 +31,7 @@ public class HailstoneSequence {
   //Takes the result parameters and makes them in a HTML file
   public void makeHtml(int input, int step, int large) throws IOException {
     String html = this.makeNice(input, step, large);
-    File f = new File(".\\results\\result.html");
+    File f = new File("./results/result.html");
     try {
         BufferedWriter bw = new BufferedWriter(new FileWriter(f));
         bw.write(html);
